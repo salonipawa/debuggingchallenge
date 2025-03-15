@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('image.webp') no-repeat center center fixed;
+        background-size: cover;
+        background-color: #101010;
+        color: rgb(186, 126, 5);
+    }
+    
+    /* Adding a semi-transparent overlay */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(16, 16, 16, 0.7); /* Dark overlay with 70% opacity */
+        z-index: -1;
+    }
+    
+
+
+h1, p.game-description {
+    text-align: center;
+    color: #facd74d4;
+    margin-top: 20px;
+    text-shadow: 0 0 4px rgb(186, 126, 5);
+}
+
+.game-description {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.game-container {
+    max-width: 600px; /* Reduce width */
+    margin: 20px auto; /* Adjust margin for better centering */
+    padding: 15px; /* Reduce padding */
+    background-color: rgba(24, 24, 24, 0.8); /* Keep semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(186, 126, 5);
+    text-align: center;
+    border: 2px solid #703600ad;
+    position: relative;
+}
+
+
+
+#code-container {
+    margin: 20px auto; /* Centering and spacing */
+    padding: 15px;
+    max-width: 90%; /* Adjust width */
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #fbe39b;
+    background-color: rgba(24, 24, 24, 0.3); /* 70% transparency */
+    border: 2px solid rgba(225, 177, 88, 0.5); /* Softer border */
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 15px auto;
+    display: block;
+    max-width: 95%;
+    box-shadow: 0 0 5px rgba(186, 126, 5, 0.3); /* Lighter glow */
+    backdrop-filter: blur(5px); /* Glass effect */
+}
+
+
+
+
+/* Subtle Dual-Tone Button Effect */
+button {
+    background-color: #614004c7; /* Soft Cyan */
+    color: #deb564;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #003d19;
+    box-shadow: 0 0 8px rgba(0, 179, 179, 0.3);
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(186, 126, 5);
+    box-shadow: 0 0 10px rgb(186, 126, 5);
+}
+
+#hint {
+    margin: 20px;
+}
+
+#result-message {
+    font-size: 18px;
+    margin-top: 20px;
+    display: none;
+    font-weight: bold;
+}
+
+.correct {
+    color: #00cc66;
+}
+
+.incorrect {
+    color: #ff6666;
+}
+
+#timer {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #facd74d4;
+    text-shadow: 0 0 4px #b30000;
+}
